@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f97f70d3e7.js" crossorigin="anonymous"></script>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Youtube Mobile</title>
 </head>
 <body>
@@ -23,7 +27,7 @@
 
     <!-- Video Player-->
     <section class="video_player">
-        <video controls autoplay src="video/video.mp4" width="480" height="300"></video>
+        <video controls autoplay src="video/video.mp4"></video>
     </section>
 
     <!-- Video Info -->
@@ -37,20 +41,19 @@
             </ul>
             <div class="titleAndButton">
             <span class="title">
-                Pink Sweat$ - At My Worst 입니다 핑크스위트 생긴건 무서운 흑형인데 노래는 잘해요 멋있어요 함 들어보세요 ~!
+                Pink Sweat$ - At My Worst 입니다 핑크스웨츠 형님 생긴건 무서운 형인데 
+                노래 엄청 잘해요 목소리 좋고 멋있어요 함 들어보세요 ~! [핑크스웨츠의 히트곡 AtMyWorst를 들어보세요!]
             </span>
-            <button class="moerBtn">
-                <i calss="fas fa-caret-down"></i>
+            <button class="moreBtn">
+                <i class="fas fa-caret-down"></i>
             </button>
             </div>
-            <div class="views">
             <span class="views">조회수 8689만회 · 6개월 전</span>
-            </div>
         </div>
         <!-- Actions -->
         <ul class="actions">
             <li>
-                <button><i class="fas fa-thumbs-up"></i><span>153만</span></button>
+                <button><i class="active fas fa-thumbs-up"></i><span>153만</span></button>
             </li>
             <li>
                 <button><i class="fas fa-thumbs-down"></i><span>1.6만</span></button>
@@ -66,46 +69,47 @@
             </li>
         </ul>
         <!-- Channel Description -->
-        <div class="matadata">
-            <img src="image/Pink Sweat$.jpg" alt="" />
-            <div class="info">
-                <span class="name">Pink Sweats</span>
-                <span class="subscribers">구독자 111만명</span>
+        <div class="channel">
+            <div class="metadata">
+                <img src="image/Pink Sweat$.jpg" alt="" />
+                <div class="info">
+                    <span class="name">Pink Sweats</span>
+                    <span class="subscribers">구독자 111만명</span>
+                </div>
             </div>
             <button class="subscribe">구독</button>
         </div>
     </section>
 
-
     <section class="upNext">
         <span class="title">Up next</span>
         <ul>
             <li class="item">
-                <img src="image/img2.JPG" alt="">
+                <div class="img"><img src="image/img2.JPG" alt=""/></div>
                 <div class="info">
                     <span class="title">Jeremy Zucker - comethru (Official Video)</span>
                     <span class="name">Jeremy Zucker</span>
                     <span class="view">조회수 3.4억회 · 2년 전</span>
                 </div>
-                <button class="moerBtn"><i class="fas fa-ellipsis-v"></i></button>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
             <li class="item">
-                <img src="image/img3.JPG" alt="">
+                <div class="img"><img src="image/img3.JPG" alt=""/></div>
                 <div class="info">
                     <span class="title">PUBLIC - Make You Mine (Put Your Hand in Mine) [Official Video]</span>
                     <span class="name">PUBLICTHEBAND</span>
                     <span class="view">조회수 9389만회 · 1년 전</span>
                 </div>
-                <button class="moerBtn"><i class="fas fa-ellipsis-v"></i></button>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
             <li class="item">
-                <img src="image/img3.JPG" alt="">
+                <div class="img"><img src="image/img4.JPG" alt=""/></div>
                 <div class="info">
                     <span class="title">Pink Sweat$ - At My Worst (feat. Kehlani) [Official Video]</span>
                     <span class="name">Pink Sweats</span>
                     <span class="view">조회수 621만회 · 1주 전</span>
                 </div>
-                <button class="moerBtn"><i class="fas fa-ellipsis-v"></i></button>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
         </ul>
     </section>
