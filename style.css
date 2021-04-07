@@ -103,15 +103,23 @@ header .icons .fa-search {
 
 .video_info .metadata .titleAndButton .title {
   font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+
+.video_info .metadata .titleAndButton .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: var(--padding);
 }
 
 .video_info .metadata .titleAndButton .moreBtn {
   height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.video_info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
 }
 
 .video_info .metadata .views {
@@ -162,6 +170,7 @@ header .icons .fa-search {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
+  margin-right: calc(var(--padding));
 }
 
 .video_info .channel .metadata .info {
@@ -235,4 +244,11 @@ header .icons .fa-search {
 .upNext .item .info .view {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    display: flex;
+    flex-direction: row;
+  }
 }
